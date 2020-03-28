@@ -15,21 +15,32 @@ including:
 
 ## Environment Variables
 
-The following local.settins.json needs to exist in the root of this project.
+-AzureWebJobsStorage: Azure storage connection string
+-CONTAINER_NAME: The storage container to monitor for new tariff rates
+-AZURE_AUTH_URL: Azure OAUTH token URL for the tenant
+-TARIFF_DOCS_API: Tariff documents publishing api url
+-TARIFF_DOCS_CLIENT_ID: Tariff documents publishing api client id
+-TARIFF_DOCS_CLIENT_SECRET: Tariff documents publishing api client secret
+
+## Run Locally
+
+The following local.settings.json needs to exist in the root of this project.
 It's git ignored because it will contain access keys
 
 ```json
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": <storage-connection-string>,
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "ContainerName": "fta-tariff-rates"
+    "AzureWebJobsStorage": "<storage-connection-string>",
+    "CONTAINER_NAME": "fta-tariff-rates",
+    "AZURE_AUTH_URL": "<azure-auth-url>",
+    "TARIFF_DOCS_API": "<tariff-docs-api>",
+    "TARIFF_DOCS_CLIENT_ID": "<tariff-docs-client-id>",
+    "TARIFF_DOCS_CLIENT_SECRET": "<tariff-docs-client-secret>",
   }
 }
 
 ```
-
-## Run Locally
 
   `func host start`
