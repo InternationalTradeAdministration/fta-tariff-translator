@@ -124,5 +124,57 @@
          "ListItemID":"7",
          "metadata_creation_date":"07/19/2018 06:32:51",
          "FTA_Publication_HS_Code":"33 - Essential oils and resinoids, perfumery, cosmetic or toilet preparations;01 - Live animals"
+      },
+      {
+         "PublicationID":"9d379dee-530d-4d98-8678-2bcdf1f848d2",
+         "metadata_storage_path":"https://cool_okay.io",
+         "Country":"Greece",
+         "Industry":"",
+         "Publication":"FTA Publication",
+         "FileName":"DeltekCostpoint711LoginClickthru (1).pdf",
+         "ListID":"1bcae6c6-3e49-4e2d-b41b-e590a18fa749",
+         "SiteName":"https://itadev2.sharepoint.com/sites/publications",
+         "ListItemID":"7",
+         "metadata_creation_date":"07/19/2018 06:32:51",
+         "FTA_Publication_HS_Code":"88 - okay"
+      },
+      {
+         "PublicationID":"9d379dee-530d-4d98-8678-2bcdf1f848d2",
+         "metadata_storage_path":"https://cool-oils.io",
+         "Country":"Greece",
+         "Industry":"",
+         "Publication":"FTA Publication",
+         "FileName":"DeltekCostpoint711LoginClickthru (1).pdf",
+         "ListID":"1bcae6c6-3e49-4e2d-b41b-e590a18fa749",
+         "SiteName":"https://itadev2.sharepoint.com/sites/publications",
+         "ListItemID":"7",
+         "metadata_creation_date":"07/19/2018 06:32:51",
+         "FTA_Publication_HS_Code":"88 - Essential oils"
+      },
+      {
+         "PublicationID":"9d379dee-530d-4d98-8678-2bcdf1f848d2",
+         "metadata_storage_path":"https://cool-seeds.io",
+         "Country":"Greece",
+         "Industry":"",
+         "Publication":"FTA Publication",
+         "FileName":"DeltekCostpoint711LoginClickthru (1).pdf",
+         "ListID":"1bcae6c6-3e49-4e2d-b41b-e590a18fa749",
+         "SiteName":"https://itadev2.sharepoint.com/sites/publications",
+         "ListItemID":"7",
+         "metadata_creation_date":"07/19/2018 06:32:51",
+         "FTA_Publication_HS_Code":"88 - Essential seeds"
+      },
+      {
+         "PublicationID":"9d379dee-530d-4d98-8678-2bcdf1f848d2",
+         "metadata_storage_path":"https://cool-ouzo.io",
+         "Country":"Greece",
+         "Industry":"",
+         "Publication":"FTA Publication",
+         "FileName":"DeltekCostpoint711LoginClickthru (1).pdf",
+         "ListID":"1bcae6c6-3e49-4e2d-b41b-e590a18fa749",
+         "SiteName":"https://itadev2.sharepoint.com/sites/publications",
+         "ListItemID":"7",
+         "metadata_creation_date":"07/19/2018 06:32:51",
+         "FTA_Publication_HS_Code":"88 - Essential ouzo"
       }
    ]

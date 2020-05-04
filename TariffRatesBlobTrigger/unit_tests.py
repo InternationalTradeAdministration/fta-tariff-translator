@@ -7,7 +7,7 @@ from io import StringIO
 
 class TestStringMethods(unittest.TestCase):
     def test_tariff_with_publishing_document(self):
-        publishing_docs_json = open('mocks/sample_traiff_publications.json')
+        publishing_docs_json = open('mocks/sample_tariff_publications.json')
         tariff_rates_csv = open('mocks/tariff_rates.csv', newline='')
         publishing_docs_list = json.load(publishing_docs_json)
         results = translator.translate(tariff_rates_csv, publishing_docs_list)
@@ -17,11 +17,15 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(rows[0]['Link_Url2'], 'https://blob.net/outbreak.pdf')
         self.assertEqual(rows[2]['Link_Url'], 'https://blob.net/matrix.pdf')
         self.assertEqual(rows[2]['Link_Url2'], '')
+        self.assertEqual(rows[3]['Link_Url'], 'https://cool_okay.io')
+        self.assertEqual(rows[3]['Link_Url2'], 'https://cool-oils.io')
+        self.assertEqual(rows[3]['Link_Url3'], 'https://cool-seeds.io')
+        self.assertEqual(rows[3]['Link_Url4'], 'https://cool-ouzo.io')
         publishing_docs_json.close()
         tariff_rates_csv.close()
 
     def test_usmca_tariff_with_publishing_document(self):
-        publishing_docs_json = open('mocks/sample_traiff_publications.json')
+        publishing_docs_json = open('mocks/sample_tariff_publications.json')
         usmca_rates_csv = open('mocks/usmca_tariff_rates.csv', newline='')
         publishing_docs_list = json.load(publishing_docs_json)
         results = translator.translate(usmca_rates_csv, publishing_docs_list)

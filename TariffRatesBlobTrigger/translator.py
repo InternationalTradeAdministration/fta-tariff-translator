@@ -49,15 +49,15 @@ def format_publishing_metadata(publishing_docs):
 
 
 def dict_list_to_csv(data, max_urls):
-    tmp_row = data[0]
-    for i in range(max_urls):
+    row_keys = list(data[0].keys())
+    for i in range(max_urls + 1):
         url_header = get_url_header(i)
-        if url_header not in tmp_row.keys():
-            tmp_row[url_header] = None
+        if url_header not in row_keys:
+            row_keys.append(url_header)
 
     temp_file = tempfile.NamedTemporaryFile(mode="r+", delete=False)
     with open(temp_file.name, "w") as csv_file:
-        dict_writer = csv.DictWriter(csv_file, tmp_row.keys(), quotechar='"')
+        dict_writer = csv.DictWriter(csv_file, row_keys, quotechar='"')
         dict_writer.writeheader()
         dict_writer.writerows(data)
     file_as_string = temp_file.read()
