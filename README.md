@@ -15,12 +15,14 @@ including:
 
 ## Environment Variables
 
--AzureWebJobsStorage: Azure storage connection string
--CONTAINER_NAME: The storage container to monitor for new tariff rates
--AZURE_AUTH_URL: Azure OAUTH token URL for the tenant
--TARIFF_DOCS_API: Tariff documents publishing api url
--TARIFF_DOCS_CLIENT_ID: Tariff documents publishing api client id
--TARIFF_DOCS_CLIENT_SECRET: Tariff documents publishing api client secret
+* AzureWebJobsStorage: Azure storage connection string
+* CONTAINER_NAME: The storage container to monitor for new tariff rates
+* AZURE_AUTH_URL: Azure OAUTH token URL for the tenant
+* TARIFF_DOCS_API: Tariff documents publishing api url
+* TARIFF_DOCS_CLIENT_ID: Tariff documents publishing api client id
+* TARIFF_DOCS_CLIENT_SECRET: Tariff documents publishing api client secret
+* DEVELOPER_PORTAL_BASE_URL: Developer portal base URL
+* DEVELOPER_PORTAL_API_KEY: Developer portal API Key
 
 ## Run Locally
 
@@ -38,6 +40,8 @@ It's git ignored because it will contain access keys
     "TARIFF_DOCS_API": "<tariff-docs-api>",
     "TARIFF_DOCS_CLIENT_ID": "<tariff-docs-client-id>",
     "TARIFF_DOCS_CLIENT_SECRET": "<tariff-docs-client-secret>",
+    "DEVELOPER_PORTAL_BASE_URL": "<developer-portal-base-url>",
+    "DEVELOPER_PORTAL_API_KEY": "<developer-portal-api-key>"
   }
 }
 

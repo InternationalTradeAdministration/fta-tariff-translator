@@ -2,7 +2,6 @@ import os
 import json
 import requests
 
-
 auth_url = os.environ["AZURE_AUTH_URL"]
 client_id = os.environ["TARIFF_DOCS_CLIENT_ID"]
 client_secret = os.environ["TARIFF_DOCS_CLIENT_SECRET"]

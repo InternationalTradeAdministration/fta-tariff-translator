@@ -7,6 +7,7 @@ from azure.storage.blob.blockblobservice import BlockBlobService as bbs
 from . import translator
 from . import azure_auth
 from . import tariff_docs
+from . import dev_portal
 from io import StringIO
 
 container_name = os.environ["CONTAINER_NAME"]
@@ -22,11 +23,9 @@ def main(tariffRates: func.InputStream):
           tariff_rates_csv,
           get_publication_documents()
         )
-        destination_file_name = tariffRates.name.replace(
-          container_name,
-          'translated'
-        )
-        save_file(destination_file_name, translated_file)
+        file_name = tariffRates.name.replace(container_name + '/', '')
+        save_file('translated/' + file_name, translated_file)
+        dev_portal.refresh(file_name)
 
 
 def get_publication_documents():
