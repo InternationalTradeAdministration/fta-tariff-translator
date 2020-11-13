@@ -18,6 +18,7 @@ def refresh(fileName):
         "El+Salvador.csv": "/v1/el_salvador_tariff_rates",
         "Guatemala.csv": "/v1/guatemala_tariff_rates",
         "Honduras.csv": "/v1/honduras_tariff_rates",
+        "Japan.csv": "/v1/japan_tariff_rates",
         "Korea.csv": "/v1/south_korea_tariff_rates",
         "Mexico+USMCA.csv": "/v1/mexico_tariff_rates",
         "Morocco.csv": "/v1/morocco_tariff_rates",
